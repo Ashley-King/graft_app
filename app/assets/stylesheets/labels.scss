@@ -1,0 +1,87 @@
+// Place all the styles related to the Labels controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* reset */
+
+
+/* custom styles */
+body {
+    width: 8.5in;
+    /* margin: 0in .1875in; */
+    font-family: 'Roboto';
+}
+.wrapper{
+    margin-top: .25in;
+    margin-bottom: .25in;
+    margin-left: .125in;
+    margin-right: .125in;
+
+
+}
+
+.label {
+    /* Online labels 2.75 x 1.8 */
+    width: 2.75in;
+    /* plus .6 inches from padding */
+    height: 1.8in;
+    position:relative;
+    margin-bottom: 0.37in;
+    /* the gutter */
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    outline: .5px dotted black;
+    border-radius: 0.125in;
+    /* outline doesn't occupy space like border does */
+}
+
+
+.page-break {
+    clear: left;
+    display: block;
+    page-break-after: always;
+}
+.logo_img{
+    height: 75px;
+    width: 75px;
+    position:absolute;
+    top:-18px;
+    left:0;
+}
+.contact{
+        position: absolute;
+        top: 8px;
+        right: 9px;
+        font-family: 'Roboto';
+        font-weight: bold;
+        font-size: 9px;
+        margin: 0;
+        span{
+            margin-right:3px;
+        }
+}
+.wine_info{
+        margin: 0;
+        position: absolute;
+        font-size: 12px;
+        font-family: 'Roboto';
+        top: 40px;
+        left: 12px;
+}
+.grapes{
+        margin: 0;
+        position: absolute;
+        font-family: 'Roboto';
+        font-size: 12px;
+        font-weight: bold;
+        top: 56px;
+        left: 12px;
+}
+
+.regions{
+    margin: 0;
+    position: absolute;
+    top: 72px;
+    left: 12px;
+    font-size: 10px;
+}
