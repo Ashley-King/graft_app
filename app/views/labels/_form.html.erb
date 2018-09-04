@@ -11,6 +11,63 @@
     </div>
   <% end %>
 
+  <div class="field">
+    <%= form.label :wine_year %>
+    <%= form.text_field :wine_year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wine_name %>
+    <%= form.text_field :wine_name %>
+  </div>
+
+
+
+  <div class="field">
+    <%= form.label :wine_info %>
+    <%= form.text_field :wine_info, :maxlength => 46 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :grapes %>
+    <%= form.text_field :grapes, :maxlength => 46 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :regions %>
+    <%= form.text_field :regions, :maxlength => 46 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description, :maxlength => 46 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hashtags %>
+    <%= form.text_field :hashtags, :maxlength => 85 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_sus %>
+    <%= form.check_box :is_sus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_org %>
+    <%= form.check_box :is_org %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_bio %>
+    <%= form.check_box :is_bio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_nat %>
+    <%= form.check_box :is_nat %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

@@ -17,6 +17,7 @@ class LabelsController < ApplicationController
     @label = Label.new
   end
   def print_page
+    @print_page = true
     render "labels/print_page"
     # respond_to do |format|
     #   format.html
@@ -79,6 +80,6 @@ class LabelsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def label_params
-      params.fetch(:label, {})
+      params.require(:label).permit(:wine_name, :wine_year, :wine_info, :grapes, :regions, :description, :hashtags, :is_sus, :is_org, :is_bio, :is_nat)
     end
 end

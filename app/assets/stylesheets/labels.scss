@@ -1,22 +1,24 @@
 // Place all the styles related to the Labels controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-/* reset */
+
 
 
 /* custom styles */
 body {
-    width: 8.5in;
-    /* margin: 0in .1875in; */
+    
+    
     font-family: 'Roboto';
+}
+.printpage{
+    width:8.5in;
+    margin:auto;
 }
 .wrapper{
     margin-top: .25in;
     margin-bottom: .25in;
     margin-left: .125in;
     margin-right: .125in;
-
-
 }
 
 .label {
@@ -28,19 +30,13 @@ body {
     margin-bottom: 0.37in;
     /* the gutter */
     float: left;
-    text-align: center;
+    // text-align: center;
     overflow: hidden;
-    outline: .5px dotted black;
+    // outline: .5px dotted black;
     border-radius: 0.125in;
     /* outline doesn't occupy space like border does */
 }
 
-
-.page-break {
-    clear: left;
-    display: block;
-    page-break-after: always;
-}
 .logo_img{
     height: 75px;
     width: 75px;
@@ -63,25 +59,72 @@ body {
 .wine_info{
         margin: 0;
         position: absolute;
-        font-size: 12px;
+        font-size: 10px;
+        font-weight:bold;
         font-family: 'Roboto';
-        top: 40px;
+        top: 38px;
         left: 12px;
 }
 .grapes{
         margin: 0;
         position: absolute;
         font-family: 'Roboto';
-        font-size: 12px;
-        font-weight: bold;
-        top: 56px;
+        font-size: 9.5px;
+        font-style: italic;
+        font-weight:bold;
+        top: 50px;
         left: 12px;
 }
 
 .regions{
     margin: 0;
     position: absolute;
-    top: 72px;
+    top: 63px;
     left: 12px;
+    font-size: 8.5px;
+}
+
+.description{
+    margin: 0;
     font-size: 10px;
+    position: absolute;
+    top: 81px;
+    left: 12px;
+    line-height: 1.2;
+    padding-right:3px;
+}
+
+.hash{
+        margin: 0;
+        position: absolute;
+        font-size: 9px;
+        font-weight: bold;
+        top: 129px;
+        left: 12px;
+        line-height: 1.2;
+        padding-right:3px;
+}
+
+.radios {
+    font-size: 8.5px;
+    position: relative;
+        left: 12px;
+        top: 153px;
+ 
+}
+
+
+.radios i{
+    padding-right: 2px;
+}
+.radios span{
+    padding-right: 7px;
+}
+
+.show-wrapper{
+        width: 3in;
+        height: 2in;
+        margin-top: 140px;
+        margin-left: auto;
+        margin-right: auto;
 }

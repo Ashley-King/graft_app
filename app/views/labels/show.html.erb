@@ -1,4 +1,62 @@
+<div class="container">
 <p id="notice"><%= notice %></p>
 
-<%= link_to 'Edit', edit_label_path(@label) %> |
-<%= link_to 'Back', labels_path %>
+    <div class="show-wrapper">
+      <div class="label">
+            <img src="/assets/graft-black.png" class = "logo_img" />
+            <p class="contact">
+                <span>graftchs.com</span> @graftchs
+            </p>
+            <p class="wine_info">
+                <%= @label.wine_info %>
+            </p>
+            <p class="grapes">
+                <%= @label.grapes %>
+            </p>
+            <p class="regions">
+                <%= @label.regions %>
+            </p>
+            <p class="description">
+                <%= @label.description %>
+            </p>
+            <p class="hash">
+                <%= @label.hashtags %>
+            </p>
+            <div class="radios">
+                <% if @label.is_sus %>
+                    <span><i class="fas fa-circle fa-sm"></i>Sustainable</span>
+                  <% else %>
+                    <span><i class="fal fa-circle fa-sm"></i>Sustainable</span>
+                  <% end %>
+                  <% if @label.is_org %>
+                    <span><i class="fas fa-circle fa-sm"></i>Organic</span>
+                  <% else %>
+                    <span><i class="fal fa-circle fa-sm"></i>Organic</span>
+                  <% end %>
+                
+
+                  <% if @label.is_bio %>
+                    <span><i class="fas fa-circle fa-sm"></i>Biodynamic</span>
+                  <% else %>
+                    <span><i class="fal fa-circle fa-sm"></i>Biodynamic</span>
+                  <% end %>
+
+                  <% if @label.is_nat %>
+                    <span><i class="fas fa-circle fa-sm"></i>Natural</span>
+                  <% else %>
+                    <span><i class="fal fa-circle fa-sm"></i>Natural</span>
+                  <% end %>
+            </div> 
+        </div> <!-- end label -->
+    </div>
+  <%= link_to 'Edit', edit_label_path(@label) %> |
+  <%= link_to 'Back To Labels', labels_path %>  
+</div>
+
+
+
+
+
+
+
+
