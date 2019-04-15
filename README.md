@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This app can be found [right here](http://graftapp.herokuapp.com/)
+- deployed to Heroku
+- uses docker & postgresql
+- not finished
+- hat tip to [this page](https://boulderinformationservices.wordpress.com/2011/08/25/print-avery-labels-using-css-and-html/) for helping me sort out the label page HTML
